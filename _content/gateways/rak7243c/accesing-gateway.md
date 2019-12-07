@@ -17,7 +17,7 @@ By default, the LoRa Gateway will work in Wi-Fi AP Mode which means that you can
 
 ![Figure 1: RAKWireless Access Point](images/access-point-wifi.png)
 
->Note: Connect to this Wi-Fi SSID by using "rakwireless" as the default password. The default IP address of the LoRa Gateway's Wi-Fi is `192.168.12.1` . Take note of this IP address as this will be needed in connecting via SSH.
+>Note: Connect to this Wi-Fi SSID by using "rakwireless" as the default password. The default IP address of the LoRa Gateway's Wi-Fi is `192.168.230.1` . Take note of this IP address as this will be needed in connecting via SSH.
 
 ### 2. Via the Ethernet Port on the Raspberry Pi 3B+ 
 You can also connect your PC with the LoRa Gateway through an Ethernet Cable via the Raspberry Pi port. By default, the IP Address of the LoRa Gateway's Ethernet is `192.168.10.10`
@@ -28,7 +28,7 @@ You can also connect your PC with the LoRa Gateway through an Ethernet Cable via
 SSH (Secure Shell) is typically used to log in to a remote machine and execute commands. There are a lot of free and good SSH Clients out there namely [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), [BitVise SSH Client](https://www.bitvise.com/ssh-client-download), [MobaXterm](https://mobaxterm.mobatek.net/) and many more. Feel free to choose one that fits your needs, you will be using Putty for this guide.
 
 ![Figure 2: Putty Software for SSH in Windows](images/putty.jpg)
-* If you have connected to the LoRa Gateway through **Wi-Fi AP Mode**, the IP Address is `192.168.12.1`
+* If you have connected to the LoRa Gateway through **Wi-Fi AP Mode**, the IP Address is `192.168.230.1`
 * If you have connected to the LoRa Gateway through **Ethernet**, the IP Address is `192.168.10.10`
 * It will then prompt you to enter the username and password. The default username is "**pi**" and the default password is "**raspberry**"
 
@@ -38,7 +38,7 @@ SSH (Secure Shell) is typically used to log in to a remote machine and execute c
 ![Figure 4: SSH in Mac OS](images/ssh-mac.png)
 * Open the terminal of Mac OS. Enter root mode by typing the following command: `sudo -i`
 
-* Enter `ssh pi@192.168.12.1` in the terminal to login to your LoRa Gateway, the default password is "raspberry".
+* Enter `ssh pi@192.168.230.1` in the terminal to login to your LoRa Gateway, the default password is "raspberry".
 If you connect your PC with the LoRa Gateway through Ethernet Cable, you should enter `ssh pi@192.168.10.10`, the default password is "raspberry".
 
 ### 3. Linux OS
